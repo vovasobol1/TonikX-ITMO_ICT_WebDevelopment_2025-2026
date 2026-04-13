@@ -9,21 +9,25 @@
       
       
       
+        <link rel="prev" href="../practice1/">
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+        <link rel="next" href="../practice3/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
     
     
       
-        <title>Лабораторные работы — Соболь Владимир</title>
+        <title>Практика 1.2 — SQLModel + PostgreSQL - Лабораторные работы — Соболь Владимир</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.e53b48f4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.e53b48f4.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -42,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -65,6 +69,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#12-sqlmodel-postgresql" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -75,7 +84,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Лабораторные работы — Соболь Владимир" class="md-header__button md-logo" aria-label="Лабораторные работы — Соболь Владимир" data-md-component="logo">
+    <a href="../../.." title="Лабораторные работы — Соболь Владимир" class="md-header__button md-logo" aria-label="Лабораторные работы — Соболь Владимир" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -95,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Практика 1.2 — SQLModel + PostgreSQL
             
           </span>
         </div>
@@ -168,7 +177,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -189,7 +198,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/lab1/docs/index.md" class="md-tabs__link">
+        <a href="../../../lab1/docs/index.md" class="md-tabs__link">
           
   
   
@@ -209,7 +218,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/lab2/docs/index.md" class="md-tabs__link">
+        <a href="../../../lab2/docs/index.md" class="md-tabs__link">
           
   
   
@@ -225,11 +234,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/lab1_sem2/docs/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -263,7 +274,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Лабораторные работы — Соболь Владимир" class="md-nav__button md-logo" aria-label="Лабораторные работы — Соболь Владимир" data-md-component="logo">
+    <a href="../../.." title="Лабораторные работы — Соболь Владимир" class="md-nav__button md-logo" aria-label="Лабораторные работы — Соболь Владимир" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -281,7 +292,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -346,7 +357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/docs/index.md" class="md-nav__link">
+      <a href="../../../lab1/docs/index.md" class="md-nav__link">
         
   
   
@@ -369,7 +380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/docs/lab1.md" class="md-nav__link">
+      <a href="../../../lab1/docs/lab1.md" class="md-nav__link">
         
   
   
@@ -392,7 +403,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/docs/task1.md" class="md-nav__link">
+      <a href="../../../lab1/docs/task1.md" class="md-nav__link">
         
   
   
@@ -415,7 +426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/docs/task2.md" class="md-nav__link">
+      <a href="../../../lab1/docs/task2.md" class="md-nav__link">
         
   
   
@@ -438,7 +449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/docs/task3.md" class="md-nav__link">
+      <a href="../../../lab1/docs/task3.md" class="md-nav__link">
         
   
   
@@ -461,7 +472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/docs/task4.md" class="md-nav__link">
+      <a href="../../../lab1/docs/task4.md" class="md-nav__link">
         
   
   
@@ -484,7 +495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1/docs/task5.md" class="md-nav__link">
+      <a href="../../../lab1/docs/task5.md" class="md-nav__link">
         
   
   
@@ -557,7 +568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab2/docs/index.md" class="md-nav__link">
+      <a href="../../../lab2/docs/index.md" class="md-nav__link">
         
   
   
@@ -580,7 +591,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab2/docs/practice1.md" class="md-nav__link">
+      <a href="../../../lab2/docs/practice1.md" class="md-nav__link">
         
   
   
@@ -603,7 +614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab2/docs/practice2.md" class="md-nav__link">
+      <a href="../../../lab2/docs/practice2.md" class="md-nav__link">
         
   
   
@@ -626,7 +637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab2/docs/practice3.md" class="md-nav__link">
+      <a href="../../../lab2/docs/practice3.md" class="md-nav__link">
         
   
   
@@ -653,26 +664,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
@@ -685,7 +701,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Лабораторная работа №1 (2 семестр) — FastAPI
@@ -699,7 +715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1_sem2/docs/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -722,7 +738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1_sem2/docs/practice1/" class="md-nav__link">
+      <a href="../practice1/" class="md-nav__link">
         
   
   
@@ -742,10 +758,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/lab1_sem2/docs/practice2/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Практика 1.2 — SQLModel + PostgreSQL
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -756,6 +794,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Цель
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Подключение к БД
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модели
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get" class="md-nav__link">
+    <span class="md-ellipsis">
+      Вложенный GET
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crud" class="md-nav__link">
+    <span class="md-ellipsis">
+      CRUD
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Итог
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -768,7 +880,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lab1_sem2/docs/practice3/" class="md-nav__link">
+      <a href="../practice3/" class="md-nav__link">
         
   
   
@@ -808,6 +920,70 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Цель
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Подключение к БД
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модели
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get" class="md-nav__link">
+    <span class="md-ellipsis">
+      Вложенный GET
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crud" class="md-nav__link">
+    <span class="md-ellipsis">
+      CRUD
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Итог
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -819,8 +995,146 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+
+<h1 id="12-sqlmodel-postgresql">Практика 1.2 — SQLModel + PostgreSQL</h1>
+<h2 id="_1">Цель</h2>
+<p>Перейти с временной БД на PostgreSQL через ORM SQLModel, реализовать CRUD и связи <strong>one-to-many</strong> и <strong>many-to-many</strong> с ассоциативной сущностью.</p>
+<h2 id="_2">Подключение к БД</h2>
+<pre><code class="language-python"># connection.py
+from sqlmodel import SQLModel, Session, create_engine
+
+db_url = &quot;postgresql://postgres:123@localhost/partners_db&quot;
+engine = create_engine(db_url, echo=True)
+
+
+def init_db() -&gt; None:
+    SQLModel.metadata.create_all(engine)
+
+
+def get_session():
+    with Session(engine) as session:
+        yield session
+</code></pre>
+<p>В <code>main.py</code>:</p>
+<pre><code class="language-python">@app.on_event(&quot;startup&quot;)
+def on_startup() -&gt; None:
+    init_db()
+</code></pre>
+<h2 id="_3">Модели</h2>
+<pre><code class="language-python">class ProfileSkillLink(SQLModel, table=True):
+    profile_id: Optional[int] = Field(default=None, foreign_key=&quot;profile.id&quot;, primary_key=True)
+    skill_id: Optional[int] = Field(default=None, foreign_key=&quot;skill.id&quot;, primary_key=True)
+    level: ExperienceLevel = Field(default=ExperienceLevel.junior)  # доп. поле связи
+
+
+class Profession(ProfessionDefault, table=True):
+    id: Optional[int] = Field(default=None, primary_key=True)
+    profiles: List[&quot;Profile&quot;] = Relationship(back_populates=&quot;profession&quot;)
+
+
+class Skill(SkillDefault, table=True):
+    id: Optional[int] = Field(default=None, primary_key=True)
+    profiles: List[&quot;Profile&quot;] = Relationship(
+        back_populates=&quot;skills&quot;, link_model=ProfileSkillLink
+    )
+
+
+class Profile(ProfileDefault, table=True):
+    id: Optional[int] = Field(default=None, primary_key=True)
+    profession: Optional[Profession] = Relationship(back_populates=&quot;profiles&quot;)
+    skills: List[Skill] = Relationship(
+        back_populates=&quot;profiles&quot;, link_model=ProfileSkillLink
+    )
+</code></pre>
+<p>Связи:</p>
+<ul>
+<li><strong>one-to-many</strong>: <code>Profession → Profile</code></li>
+<li><strong>many-to-many</strong>: <code>Profile ↔ Skill</code> через <code>ProfileSkillLink</code> с доп. полем <code>level</code></li>
+</ul>
+<h2 id="get">Вложенный GET</h2>
+<pre><code class="language-python">class ProfileWithAll(ProfileDefault):
+    id: int
+    profession: Optional[Profession] = None
+    skills: List[Skill] = []
+
+
+@app.get(&quot;/profile/{profile_id}&quot;, response_model=ProfileWithAll)
+def profile_get(profile_id: int, session=Depends(get_session)):
+    profile = session.get(Profile, profile_id)
+    if not profile:
+        raise HTTPException(404, &quot;Profile not found&quot;)
+    return profile
+</code></pre>
+<h2 id="crud">CRUD</h2>
+<table>
+<thead>
+<tr>
+<th>Метод</th>
+<th>URL</th>
+<th>Назначение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GET</td>
+<td><code>/profiles_list</code></td>
+<td>список</td>
+</tr>
+<tr>
+<td>GET</td>
+<td><code>/profile/{id}</code></td>
+<td>детально (с профессией и навыками)</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/profile</code></td>
+<td>создать</td>
+</tr>
+<tr>
+<td>PATCH</td>
+<td><code>/profile/{id}</code></td>
+<td>частично обновить</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td><code>/profile/{id}</code></td>
+<td>удалить</td>
+</tr>
+<tr>
+<td>GET/POST</td>
+<td><code>/professions_list</code>, <code>/profession</code></td>
+<td>работа с профессиями</td>
+</tr>
+<tr>
+<td>GET/POST/DEL</td>
+<td><code>/skills_list</code>, <code>/skill</code>, <code>/skill/{id}</code></td>
+<td>работа с навыками</td>
+</tr>
+<tr>
+<td>POST</td>
+<td><code>/profile/{pid}/skill/{sid}?level=…</code></td>
+<td>прикрепить навык с указанием уровня (M:N)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_4">Итог</h2>
+<p>Все сущности перенесены в PostgreSQL через SQLModel. GET-запросы профиля возвращают вложенные объекты профессии и список навыков.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -862,10 +1176,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tabs", "navigation.sections", "navigation.top"], "search": "/assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>
